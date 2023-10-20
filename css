@@ -1,1 +1,19 @@
+.collapsible {
+  background-color:#777;
+  color: white;
+  padding: 18px;
+  width: 100;
+  text-align: left;
+  outline: none;
+}
 
+.content {
+  display: none;
+  background-color: #ffffff;
+  padding: 18px;
+  overflow: hidden;
+{
+
+.collapsible.active {
+    background-color: #555;
+}
