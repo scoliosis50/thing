@@ -1,4 +1,4 @@
-.collapsible {
+.collapse {
   background-color:#777;
   color: white;
   padding: 18px;
@@ -14,6 +14,6 @@
   overflow: hidden;
 {
 
-.collapsible.active {
+.collapse.active {
     background-color: #555;
 }
