@@ -126,50 +126,62 @@
 
 
 <body>
-	<div class = "the"
-		<button class = "collapse"> Did you know </button>
-		<div class="con">
-			<ul>
-				<li><a href="#blah">stuff</a></li>
-				<li><a href="#blah2">idk man</a></li>
-			</ul>
-		</div>
+<head>
+    <title>My Table of Contents</title>
+    <style>
+        /* Define styles for the collapsible buttons and content */
+        .collapse-button {
+            background-color: #eee;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            text-transform: uppercase;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Collapsible Section 1 -->
+    <button class="collapse-button">Section 1</button>
+    <div class="content">
+        <ul>
+            <li><a href="#subsection1">Subsection 1</a></li>
+            <li><a href="#subsection2">Subsection 2</a></li>
+        </ul>
+    </div>
 
-		<button class = "collapse">blog</button>
-		<div class="con">
-			<ul>
-				<li><a href = #blah3>meh</a></li>
-				<li><a href = #blah4>meh</a></li>
-				
-			</ul>
-		</div>
-	</div>
-			
-	<div class = "con">
-		<h1 id="section1-subsection1">Section 1 - Subsection 1</h1>
-        	<p>Content of Section 1 - Subsection 1.</p>
-        	<h1 id="section1-subsection2">Section 1 - Subsection 2</h1>
-        	<p>Content of Section 1 - Subsection 2.</p>
-        	<h1 id="section2-subsection1">Section 2 - Subsection 1</h1>
-        	<p>Content of Section 2 - Subsection 1.</p>
-        	<h1 id="section2-subsection2">Section 2 - Subsection 2</h1>
-        	<p>Content of Section 2 - Subsection 2.</p>
-    	</div>
+    <!-- Collapsible Section 2 -->
+    <button class="collapse-button">Section 2</button>
+    <div class="content">
+        <ul>
+            <li><a href="#subsection3">Subsection 1</a></li>
+            <li><a href="#subsection4">Subsection 2</a></li>
+        </ul>
+    </div>
 
+    <!-- Content Sections -->
+    <h1 id="subsection1">Subsection 1</h1>
+    <p>Content of Subsection 1.</p>
+    <h1 id="subsection2">Subsection 2</h1>
+    <p>Content of Subsection 2.</p>
+    <h1 id="subsection3">Subsection 1</h1>
+    <p>Content of Subsection 1.</p>
+    <h1 id="subsection4">Subsection 2</h1>
+    <p>Content of Subsection 2.</p>
 
-	<script src="script.js"></script>
+    <script>
+        // Add event listeners to collapsible buttons
+        const buttons = document.querySelectorAll(".collapse-button");
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 </body>
-
 </html>
-
-
-
-			
-			
-			
-		
-		
-	
-
-
-
