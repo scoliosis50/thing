@@ -75,72 +75,43 @@
         <h4 class="centered-text">EVERYTHING SPACE AND MORE</h4>
         <h5 class="centered-text">Test123</h5>
     </header9>
+
 </body>
+<div id="table-of-contents">
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <!-- Add more items as needed -->
+    </ul>
+</div>
+
+    #table-of-contents {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px; /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+#table-of-contents a {
+    text-decoration: none;
+}
+
+<script>
+    const toc = document.getElementById("table-of-contents");
+    const tocHeader = toc.querySelector("h2");
+
+    tocHeader.addEventListener("click", () => {
+        const ul = toc.querySelector("ul");
+        ul.style.display = ul.style.display === "none" ? "block" : "none";
+    });
+</script>
 </html>
-
-
-
-
-
-<body>
-<head>
-    <title>My Table of Contents</title>
-    <style>
-        /* Define styles for the collapsible buttons and content */
-        .collapse-button {
-            background-color: #eee;
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            text-align: left;
-            border: none;
-            text-transform: uppercase;
-        }
-        .content {
-            display: none;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Collapsible Section 1 -->
-    <button class="collapse-button">Section 1</button>
-    <div class="content">
-        <ul>
-            <li><a href="#subsection1">Subsection 1</a></li>
-            <li><a href="#subsection2">Subsection 2</a></li>
-        </ul>
-    </div>
-
-    <!-- Collapsible Section 2 -->
-    <button class="collapse-button">Section 2</button>
-    <div class="content">
-        <ul>
-            <li><a href="#subsection3">Subsection 1</a></li>
-            <li><a href="#subsection4">Subsection 2</a></li>
-        </ul>
-    </div>
-
-    <!-- Content Sections -->
-    <h1 id="subsection1">Subsection 1</h1>
-    <p>Content of Subsection 1.</p>
-    <h1 id="subsection2">Subsection 2</h1>
-    <p>Content of Subsection 2.</p>
-    <h1 id="subsection3">Subsection 1</h1>
-    <p>Content of Subsection 1.</p>
-    <h1 id="subsection4">Subsection 2</h1>
-    <p>Content of Subsection 2.</p>
-
-    <script>
-        // Add event listeners to collapsible buttons
-        const buttons = document.querySelectorAll(".collapse-button");
-        buttons.forEach(button => {
-            button.addEventListener("click", function() {
-                this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block";
-            });
-        });
-    </script>
-</body>
-</html>
-
-
