@@ -1,4 +1,4 @@
-const coll = document.querySelectorAll(".collapsible")
+const coll = document.querySelectorAll(".collapse")
 let i;
 
 for(i=0; I <coll.length; i++){
