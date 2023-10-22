@@ -113,45 +113,5 @@
     </header9>
 </body>
 
-</body>
-<div id="table-of-contents">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <!-- Add more items as needed -->
-    </ul>
-</div>
-
-<style>
-    #table-of-contents {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 300px; 
-        background-color: #000000;
-        padding: 10px;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
-    }
-
-    #table-of-contents ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    #table-of-contents a {
-        text-decoration: none;
-    }
-</style>
-
-<script>
-    const toc = document.getElementById("table-of-contents");
-    const tocHeader = toc.querySelector("h2");
-
-    tocHeader.addEventListener("click", () => {
-        const ul = toc.querySelector("ul");
-        ul.style.display = ul.style.display === "none" ? "block" : "none";
-    });
-</script>
 </html>
 
