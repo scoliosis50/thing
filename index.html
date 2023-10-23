@@ -18,6 +18,7 @@
             background-size: cover;
             padding: 60px;
             text-align: center;
+        }
             
         /* Space1 */
         h1, p {
@@ -54,6 +55,7 @@
             font-size: 20px;
         }
 
+            
         .top-nav {
             list-style: none;
             padding: 0;
@@ -62,12 +64,16 @@
         }
 
         .top-nav li {
-            margin: 0 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .top-nav a {
+            margin: 0 20px;
             text-decoration: none;
-            color: #ffffff; /* Choose your desired link color */
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         .right-aligned-indent {
@@ -82,14 +88,17 @@
 <body>
     <div class="boxx">
    <h1 class="centered-text">Space</h1>
-         <ul class="top-nav">
+         <div class="top-nav">
+             <ul>
         <li><a href="./index.html">Home1</a></li>
         <li><a href="./about.html">Apps</a></li>
         <li><a href="./service1.html">Service</a></li>
         <li><a href="./contact.html">Contact</a></li>
         <li><a href="./Shop.html">Shop</a></li>
-    </ul>
+            </ul> 
+         </div>
     </div>
+        
     <div style="display: flex; align-items: center;">
         <div style="flex: 1;">
             
