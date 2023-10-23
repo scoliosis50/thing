@@ -29,7 +29,7 @@
         .wide-box {
             background-color: lightgrey;
             padding: 20px;
-            text-align: center;
+            text-align: right;
             grid-column: span 3; /* This spans all three columns */
         }
 
@@ -69,10 +69,16 @@
             font-size: 150px;
         }
 
-        h2, h3, h4, p {
+        h2, h4, h5, p {
             color: #808080;
             font-size: 30px;
         }
+        h3, p {
+            color: #808080;
+            font-size: 30px;
+          text-align: right;
+        }
+        
     </style>
 </head>
 <body>
@@ -94,19 +100,19 @@
         </div>
         <div class="box">
             <img src="https://space.abemblem.com/cdn/shop/products/236234_1024x1024.png?v=1546622619" style = "width: 400px; height: auto;" alt="Product 2">
-            <h3>Canadian Space Agency (CSA) Patch</h3>
+            <h5>Canadian Space Agency (CSA) Patch</h5>
             <p>Show your Canadian spirit by supporting the CSA with a custom patch.</p>
         </div>
         <div class="box">
             <img src="https://m.media-amazon.com/images/I/81TicO9MWFL._SY522_.jpg" style ="width: 350px; height: auto;" alt="Product 3">
             <h4>Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime by Sean M. Carroll</h4>
-            <p>For all interested in space and the concept of time, this book is a must-read. Join Sean.M Carroll as he explores the concept of time and alternate realities.  </p>
+            <p>For all interested in space and the concept of time, this book is a must-read. Join Sean.M Carroll as he explores the concept of time and alternate realities. </p>
         </div>
         
         <div class="wide-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Simple_Constellation_Map.png" style="width: 400px; height: auto;" alt="Product 4">
-            <h3>Constellation Map</h3>
-            <p>Explore the night sky with this constellation map. Perfect for stargazing and learning about the stars.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Simple_Constellation_Map.png" style="float: left; width: 400px; height: auto;" alt="Product 4">
+            <h3 style = "text-align: right;">Constellation Map</h3>
+            <p style = "text-align: right;">Explore the night sky with this constellation map. Perfect for stargazing and learning about the stars.</p>
         </div>
     </div>
 </body>
