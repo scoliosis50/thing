@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Shop</title>
     <style>
-        
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns in a row */
             gap: 20px;
             padding: 20px;
         }
@@ -27,22 +26,20 @@
             margin: 10px 0; /* Adjust the spacing as needed */
         }
 
-        .boll {
+        .wide-box {
             background-color: lightgrey;
-            width: 900px;
-            padding: 70px;
+            padding: 20px;
             text-align: center;
-            grid-column: 2;
-            grid-row: span 5;
+            grid-column: span 3; /* This spans all three columns */
         }
 
-        .boll img {
-            width: 150px; /* Set your desired width */
+        .wide-box img {
+            width: 300px; /* Set your desired width for the wide box */
             height: auto; /* Maintain aspect ratio */
         }
 
-        .boll p {
-            margin: 30px 0; /* Adjust the spacing as needed */
+        .wide-box p {
+            margin: 10px 0; /* Adjust the spacing as needed */
         }
 
         .boxx {
@@ -77,7 +74,6 @@
             font-size: 30px;
         }
         
-
     </style>
 </head>
 <body>
@@ -108,7 +104,7 @@
             <p>For all interested in space and the concept of time, this book is a must-read. Join Sean.M Carroll as he explores the concept of time and alternate realities.  </p>
         </div>
         
-        <div class = "boll">
+        <div class = "wide-box">
             <img src = "https://upload.wikimedia.org/wikipedia/commons/6/66/Simple_Constellation_Map.png" style = "width: 400px; height: auto;" alt="Product 2">
              <h3>constellation map</h3>
             <p>euh.</p>
