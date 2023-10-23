@@ -33,20 +33,18 @@
             padding: 60px;
             text-align: center;
         }
-         .top-nav {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+
+        .nav-links {
             display: flex;
+            justify-content: center;
         }
 
-        .top-nav li {
-            margin: 0 10px;
-        }
-
-        .top-nav a {
+        .nav-links a {
+            margin: 0 20px; /* Adjust the spacing between links */
             text-decoration: none;
-            color: #ffffff; /* Choose your desired link color */
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
         }
 
         h1, p {
@@ -64,13 +62,12 @@
     <div class="boxx">
         <h1 class="centered-text">Space Store</h1>
         <!-- Navigation links -->
-        <ul class="top-nav">
-        <li><a href="./index.html">Home1</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./service1.html">Service</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./Shop.html">Shop</a></li>
-    </ul>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
     <div class="grid-container">
         <div class="box">
@@ -93,3 +90,4 @@
     </div>
 </body>
 </html>
+
