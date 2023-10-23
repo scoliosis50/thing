@@ -6,7 +6,7 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three equal columns in a row */
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
         }
@@ -18,28 +18,34 @@
         }
 
         .box img {
-            width: 100px; /* Set your desired width */
-            height: auto; /* Maintain aspect ratio */
+            width: 100px;
+            height: auto;
         }
 
         .box p {
-            margin: 10px 0; /* Adjust the spacing as needed */
+            margin: 10px 0;
         }
 
         .wide-box {
             background-color: lightgrey;
             padding: 20px;
             text-align: right;
-            grid-column: span 3; /* This spans all three columns */
         }
 
         .wide-box img {
-            width: 400px; /* Set your desired width for the wide box */
-            height: auto; /* Maintain aspect ratio */
+            width: 400px;
+            height: auto;
         }
 
         .wide-box p {
-            margin: 10px 0; /* Adjust the spacing as needed */
+            margin: 10px 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
         }
 
         .boxx {
@@ -57,13 +63,13 @@
         }
 
         .nav-links a {
-            margin: 0 20px; /* Adjust the spacing between links */
+            margin: 0 20px;
             text-decoration: none;
             color: white;
             font-weight: bold;
             font-size: 25px;
         }
-           
+
         h1, p {
             color: #ffffff;
             font-size: 150px;
@@ -73,12 +79,12 @@
             color: #808080;
             font-size: 30px;
         }
+
         h3, p {
             color: #808080;
             font-size: 30px;
-          text-align: right;
+            text-align: right;
         }
-        
     </style>
 </head>
 <body>
@@ -94,27 +100,29 @@
     </div>
     <div class="grid-container">
         <div class="box">
-            <img src="https://i.ebayimg.com/images/g/7JQAAOSwDIpgM7OC/s-l1200.jpg" style = "width: 350px; height: auto;" alt="Product 1";>
+            <img src="https://i.ebayimg.com/images/g/7JQAAOSwDIpgM7OC/s-l1200.jpg" style="width: 350px; height: auto;" alt="Product 1">
             <h2>SkyWatcher Explorer 130M Telescope</h2>
-            <p> With this innovative, beginner-friendly telescope, you can explore planets and stars alike. See the night sky in incredible detail without breaking the bank!  </p>
+            <p>With this innovative, beginner-friendly telescope, you can explore planets and stars alike. See the night sky in incredible detail without breaking the bank!</p>
         </div>
         <div class="box">
-            <img src="https://space.abemblem.com/cdn/shop/products/236234_1024x1024.png?v=1546622619" style = "width: 400px; height: auto;" alt="Product 2">
+            <img src="https://space.abemblem.com/cdn/shop/products/236234_1024x1024.png?v=1546622619" style="width: 400px; height: auto;" alt="Product 2">
             <h5>Canadian Space Agency (CSA) Patch</h5>
             <p>Show your Canadian spirit by supporting the CSA with a custom patch.</p>
         </div>
         <div class="box">
-            <img src="https://m.media-amazon.com/images/I/81TicO9MWFL._SY522_.jpg" style ="width: 350px; height: auto;" alt="Product 3">
+            <img src="https://m.media-amazon.com/images/I/81TicO9MWFL._SY522_.jpg" style="width: 350px; height: auto;" alt="Product 3">
             <h4>Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime by Sean M. Carroll</h4>
-            <p>For all interested in space and the concept of time, this book is a must-read. Join Sean.M Carroll as he explores the concept of time and alternate realities. </p>
-        </div>
-        
-        <div class="wide-box" style="grid-row: span 3;>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Simple_Constellation_Map.png" style="float: left; width: 400px; height: auto;" alt="Product 4">
-            <h3 style = "text-align: right;">Constellation Map</h3>
-            <p style = "text-align: right;">Explore the night sky with this constellation map. Perfect for stargazing and learning about the stars.</p>
+            <p>For all interested in space and the concept of time, this book is a must-read. Join Sean.M Carroll as he explores the concept of time and alternate realities.</p>
         </div>
     </div>
+    <div class="wide-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Simple_Constellation_Map.png" style="width: 400px; height: auto;" alt="Product 4">
+        <h3>Constellation Map</h3>
+        <p>Explore the night sky with this constellation map. Perfect for stargazing and learning about the stars.</p>
+    </div>
+</body>
+</html>
+
 </body>
 </html>
 
