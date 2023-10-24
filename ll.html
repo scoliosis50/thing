@@ -11,23 +11,44 @@
             padding: 0;
         }
 
-        header {
+        .header {
             background-color: #333;
             color: white;
-            text-align: center;
             padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav li {
+            margin: 0 20px;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 20px auto;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
         h1 {
             font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
         }
 
         p {
@@ -37,26 +58,41 @@
     </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>About Me</h1>
-    </header>
+    </div>
 
-    <div class="container">
+    <div class="nav">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </div>
+
+    <div class="container" id="introduction">
         <h2>Introduction</h2>
         <p>
             Hi, I'm [Your Name], and welcome to my "About Me" page. I'm excited to share a little bit about myself with you.
         </p>
+    </div>
 
+    <div class="container" id="background">
         <h2>Background</h2>
         <p>
             I come from [Your Hometown] and have always been passionate about [Your Interests/Hobbies]. From a young age, I've been curious about the world and have a keen interest in [Your Interests/Hobbies].
         </p>
+    </div>
 
+    <div class="container" id="education">
         <h2>Education</h2>
         <p>
             I completed my education at [Your School/University] with a degree in [Your Major]. My academic journey has provided me with valuable knowledge and skills in [Your Field].
         </p>
+    </div>
 
+    <div class="container" id="interests">
         <h2>Interests</h2>
         <p>
             In my free time, I enjoy [Your Hobbies/Interests]. Whether it's [Specific Interest 1], [Specific Interest 2], or [Specific Interest 3], I'm always looking for new opportunities to learn and grow.
@@ -64,3 +100,4 @@
     </div>
 </body>
 </html>
+
